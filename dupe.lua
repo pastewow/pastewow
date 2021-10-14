@@ -1,7 +1,6 @@
 getgenv().Dupe = false
 getgenv().Item = ""
 
-spawn(function()
 while getgenv().Dupe do
     wait()
     for i,v in pairs(game:GetService("Players").LocalPlayer.Character:GetChildren()) do
@@ -11,9 +10,7 @@ while getgenv().Dupe do
         end
     end
 end
-end)
 
-spawn(function()
 while getgenv().Dupe do
     wait()
     for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetChildren()) do
@@ -22,4 +19,3 @@ while getgenv().Dupe do
         end
     end
 end
-end)
