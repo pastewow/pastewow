@@ -25,7 +25,6 @@ __index = hookmetamethod(game, "__index", function(t, k)
     if (t:IsA("Mouse") and (k == "Hit" or k == "Target") and Aiming.Check()) then
         -- // Vars
         local SelectedPart = Aiming.SelectedPart
-        print(SelectedPart)
 
         -- // Hit/Target
         if (DaHoodSettings.SilentAim and (k == "Hit" or k == "Target")) then
